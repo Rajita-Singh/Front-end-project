@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.jumbotron {
+  padding: 1.2rem 1rem;
+  text-align: center;
+  background-color: #272636;
+  color: #fff;
+}
+@keyframes animateBorder {
+  0% {
+    background-position: 0px 0px, 300px 116px, 0px 150px, 216px 0px;
+  }
+  100% {
+    background-position: 100px 0px, 0px 116px, 0px 0px, 216px 150px;
+  }
+}
+.animated-brd {
+  background: linear-gradient(90deg, rgb(4, 243, 56) 50%, transparent 50%), linear-gradient(90deg, rgb(251, 251, 252) 50%, transparent 50%), linear-gradient(0deg, rgb(253, 253, 253) 50%, transparent 50%), linear-gradient(0deg, rgb(251, 251, 252) 50%, transparent 50%);
+  background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+  background-size: 15px 6px, 15px 4px, 2px 15px, 4px 15px;
+  background-position: 0px 0px, 200px 100px, 0px 100px, 200px 0px;
+  padding: 10px;
+  animation: animateBorder 5s infinite linear;
+}
+.left-content {
+  float: left;
+  padding-right: 20px;
+}
+
+.text-bold{
+  font-weight: bold;
+}
+
+.list-group {
+  margin-bottom: 10px;
+}
+
+.list-group-item{
+  border-top: 5px solid rgb(156, 158, 175);
+}
+.align-right{
+  float: right;
+  font-size: 13px;
+}
+.span-small{
+  font-size: 12px;
+}
+.date{
+  color:#0d56c3;
+}
+
+.pitch{
+  color:rgb(190, 57, 5);
+  font-size: 15px;
+}
+
+.umpire{
+  font-size: 13px;
+}
+
+.light-text{
+  color: rgb(147, 148, 148);
+}
+
+.title{
+  font-family: 'Saira Condensed', sans-serif;
+}
+
+.description{
+  font-family: 'Abel', sans-serif;
+  margin-top: 10px;
+  margin-bottom: 2px;
+}
+
+.logo-bg{
+  background: #fff;
+  padding: 16px 10px 5px;
+  border-radius: 50%;
+  width: 125px;
+  height: 125px;
+  display: inline-block;
+  border: 5px solid rgb(73, 123, 189);
+}
+
+.container > div ~ div {
+  background-color: #3b487b;
+}
+.won-text{
+  color: #06b83b;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.tied-text{
+  color: rgb(245, 139, 52);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.lose-text{
+  color: #bd1e02;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.won-color{
+  border-top-color: #8bb864;
+}
+
+.lose-color{
+  border-top-color: #ca1028;
+}
+
+.tied-color{
+  border-top-color: #25a4e9;
+}
